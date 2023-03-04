@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all .2s;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ebeef2;
+  color: #002442;
+  font-family: 'Nunito', sans-serif;
+}
+
+a {
+  color: #002442;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.gallery {
+  min-height: 100vh;
+  background-color: #d2dbff;
+  padding-bottom: 100px;
+}
+
+.gallery .controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.controls .buttons {
+  height: 40px;
+  width: 140px;
+  background-color: #7a7cff;
+  color: #ffffff;
+  font-family: inherit;
+  text-transform: capitalize;
+  line-height: 40px;
+  text-align: center;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0 2px 16px #e0b70080;
+}
+
+.buttons:hover {
+  box-shadow: none;
+}
+
+.buttons:active {
+  transform: scale(.98);
+}
+
+.buttons.active {
+  background-color: #00e9c2;
+  box-shadow: none;
+}
+
+.gallery .image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.image-container .image {
+  height: 420px;
+  width: 270px;
+  overflow: hidden;
+  box-shadow: 0 2px 16px #005ae030;
+  margin: 20px;
+}
+
+.image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.image:hover img {
+  transform: scale(1.1);
+}
